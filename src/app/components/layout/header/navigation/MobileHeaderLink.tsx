@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { HeaderItem } from '../../../../types/layout/menu';
 import { usePathname, useRouter } from 'next/navigation';
 
-const MobileHeaderLink: React.FC<{ item: HeaderItem , onNavClick?: () => void }> = ({ item, onNavClick }) => {
+const MobileHeaderLink: React.FC<{ item: HeaderItem, onNavClick?: () => void }> = ({ item, onNavClick }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
 
   const handleToggle = () => {
@@ -37,6 +37,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem , onNavClick?: () => void }>
               {subItem.label}
             </Link>
           ))}
+      
         </div>
       )}
     </div>

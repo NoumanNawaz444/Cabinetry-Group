@@ -5,9 +5,9 @@ import { HeaderItem } from '../../../../types/layout/menu';
 import { usePathname } from 'next/navigation';
 
 const HeaderLink: React.FC<{
-   item: HeaderItem ,
-   onNavClick?: () => void
-  }> = ({ item, onNavClick }) => {
+  item: HeaderItem,
+  onNavClick?: () => void
+}> = ({ item, onNavClick }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname()
   const handleMouseEnter = () => {
@@ -41,6 +41,7 @@ const HeaderLink: React.FC<{
               {subItem.label}
             </Link>
           ))}
+          
         </div>
       )
       }

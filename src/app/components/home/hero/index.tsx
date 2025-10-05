@@ -68,7 +68,7 @@ const Hero = () => {
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md relative z-10">
         <div className="grid lg:grid-cols-12 grid-cols-1">
           <div
-            className="flex flex-col col-span-6 justify-center items-start"
+            className="flex flex-col col-span-6 justify-center items-start sm:max-w-[100%]"
             data-aos="fade-right"
           >
             <div className="mb-8">
@@ -126,13 +126,14 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="block  col-span-6 lg:absolute xl:-right-60 right-0 bottom-0 -z-1">
+          <div className="block  col-span-6 lg:absolute xl:-right-60 right-0 bottom-0 -z-1 sm:max-w-[100%]">
             <Image
               src="/images/hero/cabinet.jpg"
               alt="heroimage"
               width={800}
               height={0}
               style={{ width: "100%", height: "calc(100%-80px)" }}
+              className="object-cover"
             />
           </div>
           

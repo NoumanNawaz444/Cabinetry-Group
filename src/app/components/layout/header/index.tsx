@@ -80,8 +80,8 @@ const Header: React.FC = () => {
     fetchData()
   }, [])
 
-  console.log("data",data);
-  
+  console.log("data", data);
+
 
 
   // const handleSignOut = () => {
@@ -97,8 +97,8 @@ const Header: React.FC = () => {
       <div className="container bg-transparent mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4 py-6">
         <Logo />
         <nav className="hidden lg:flex flex-grow items-center justify-center space-x-6">
-          {data.map((item:any, index:any) => (
-            <HeaderLink key={index} item={item} onNavClick={()=>setNavbarOpen(false)}  />
+          {data.map((item: any, index: any) => (
+            <HeaderLink key={index} item={item} onNavClick={() => setNavbarOpen(false)} />
           ))}
         </nav>
         <div className="flex items-center space-x-4">
@@ -168,6 +168,12 @@ const Header: React.FC = () => {
             <span className="block w-6 h-0.5 bg-black dark:bg-white mt-1.5"></span>
           </button>
         </div>
+        <Link
+          href="/contact"
+          className='m-4 w-[200px] bg-primary text-center transition-all uppercase font-bold hover:rounded-full md:block hidden hover:bg-blue-700 text-white text-sm  py-2 px-4 rounded'
+        >
+          Contact Now
+        </Link>
       </div>
       {navbarOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" />
@@ -191,10 +197,12 @@ const Header: React.FC = () => {
             </svg>
           </button>
         </div>
-        <nav className="flex flex-col items-start p-4">
-          {data.map((item:any, index:any) => (
-            <MobileHeaderLink key={index} item={item} onNavClick={()=>setNavbarOpen(false)} />
-          ))}
+        <nav className="flex flex-col min-h-screen items-center justify-between p-4">
+          <div className="flex flex-col w-full items-center justify-between p-4">
+            {data.map((item: any, index: any) => (
+              <MobileHeaderLink key={index} item={item} onNavClick={() => setNavbarOpen(false)} />
+            ))}
+          </div>
           {/* <div className="mt-4 flex flex-col space-y-4 w-full">
             {user?.user || session?.user ? (
               <>
@@ -228,6 +236,12 @@ const Header: React.FC = () => {
               </>
             )}
           </div> */}
+          <Link
+            href="/contact"
+            className=' m-4 w-[200px] text-center mb-20 bg-primary transition-all uppercase font-bold hover:rounded-full block md:hidden hover:bg-blue-700 text-white text-sm  py-2 px-4 rounded'
+          >
+            Contact Now
+          </Link>
         </nav>
       </div>
     </header>
