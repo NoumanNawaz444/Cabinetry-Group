@@ -12,7 +12,7 @@ const headerData = [
   },
   {
     label: "Gallery",
-    href: "#gallery",
+    href: "/Gallery",
   },
   { label: "Contact", href: "/contact" },
 ];

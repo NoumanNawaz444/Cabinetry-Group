@@ -55,7 +55,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <Head>
         <title>Cabinetry Group | Premium Cabinetry & Joinery Solutions</title>
+        <link rel="shortcut icon" href="/images/logo/logo.jpg" type="image/x-icon" />
       </Head>
+      
       <body className={dmsans.className}>
         <AppContextProvider>
           <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
