@@ -96,14 +96,14 @@ const Footer = () => {
                     Properties
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/blogs" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Blog
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
-            <div className="w-full lg:col-span-4 col-span-12">
+            {/* <div className="w-full lg:col-span-4 col-span-12">
               <h4 className="mb-4 text-lg text-white dark:text-white">
                 Popular Searches
               </h4>
@@ -129,7 +129,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
