@@ -11,9 +11,7 @@ import Listing from './components/home/property-list';
 import Testimonials from './components/home/testimonial';
 import ContactInfo from './components/contact/contact-info';
 import ContactForm from './components/contact/form';
-export const metadata: Metadata = {
-  title: "Property",
-};
+
 
 export default function Home() {
   return (

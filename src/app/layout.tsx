@@ -8,6 +8,7 @@ import { AppContextProvider } from "../context-api/PropertyContext";
 import Footer from "./components/layout/footer";
 import ScrollToTop from "./components/scroll-to-top";
 import Header from "./components/layout/header";
+import Head from "next/head";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -52,6 +53,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <title>Cabinetry Group | Premium Cabinetry & Joinery Solutions</title>
+      </Head>
       <body className={dmsans.className}>
         <AppContextProvider>
           <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
